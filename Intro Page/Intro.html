@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+            body {
+            color: white;
+        }
+    body {
+            background-image: url("tree.jpg");
+        }
+     h2 {
+            color: white
+    }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h2>Marcus Golding</h2>
+</div>
+
+<div class="row">
+  <div class="column side"></div>
+  <div class="column middle" >
+      <p>My name is Marcus Golding and I am an FAU student Studying Computer Science. I have done Work in C, C++, HTML, and CSS. I play Soccer and listen to a wide variety of music in my off time. One day in the future I hope to get a job doing IT and on hands technical support and to, in a less distant future, get an internship in an IT position.</p></div>
+  <div class="column side"><img src="profile.jpg" alt=""></div>
+</div>
+</div>
+
+</body>
+</html>
